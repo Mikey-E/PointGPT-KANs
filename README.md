@@ -1,3 +1,29 @@
+--------------------------BEGIN fork preamble------------------------------
+This is a fork of pointgpt. After the fork preamble you will find the original pointgpt readme at the time of the fork.
+
+## Installation/Setup Addendum
+Commands for a successful install:
+- git clone https://github.com/CGuangyan-BIT/PointGPT.git
+- cd PointGPT/
+- conda create -n pointgpt python=3.8
+- conda activate pointgpt
+- conda install -c conda-forge cudatoolkit=11.1
+- conda install pytorch=1.8.1 torchvision=0.9.1 torchaudio=0.8.1 -c pytorch
+- pip install argparse easydict h5py matplotlib numpy pyyaml scipy tensorboardX timm==0.4.5 tqdm transforms3d termcolor
+- pip install open3d==0.10
+- pip install opencv-python
+- pip install torchstat==0.0.7
+- cd extensions/
+- cd chamfer\_dist/
+- python setup.py install --user
+- cd ..
+- cd extensions/
+- cd emd/
+- python setup.py install --user
+- pip install "git+https://github.com/erikwijmans/Pointnet2\_PyTorch.git#egg=pointnet2\_ops&subdirectory=pointnet2\_ops\_lib"
+- pip install --upgrade https://github.com/unlimblue/KNN\_CUDA/releases/download/0.2/KNN\_CUDA-0.2-py3-none-any.whl
+
+--------------------------END fork preamble--------------------------
 # PointGPT
 
 ## PointGPT: Auto-regressively Generative Pre-training from Point Clouds [ArXiv](https://arxiv.org/abs/2305.11487)
