@@ -1,4 +1,5 @@
 --------------------------BEGIN fork preamble------------------------------
+
 This is a fork of pointgpt. After the fork preamble you will find the original pointgpt readme at the time of the fork.
 
 ## Installation/Setup Addendum
@@ -14,14 +15,14 @@ Commands for a successful install:
 - pip install opencv-python
 - pip install torchstat==0.0.7
 - cd extensions/
-- cd chamfer\_dist/
+- cd chamfer_dist/
 - python setup.py install --user
 - cd ..
 - cd extensions/
 - cd emd/
 - python setup.py install --user
-- pip install "git+https://github.com/erikwijmans/Pointnet2\_PyTorch.git#egg=pointnet2\_ops&subdirectory=pointnet2\_ops\_lib"
-- pip install --upgrade https://github.com/unlimblue/KNN\_CUDA/releases/download/0.2/KNN\_CUDA-0.2-py3-none-any.whl
+- pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointnet2_ops&subdirectory=pointnet2_ops_lib"
+- pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
 
 --------------------------END fork preamble--------------------------
 # PointGPT
